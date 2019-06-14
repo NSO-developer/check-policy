@@ -9,10 +9,8 @@ CONFIG = {
     'xpath': '/vpn/l3vpn/endpoint/as-number',
     'dependency': '/vpn/l3vpn/endpoint/',
     'exitstatus': 'WARNING',  # WARNING or ERROR
-    'warningmsg': 'Are you sure you want to change the BGP AS number? \
-Doing so might disconnect the management interface!',
-    'errormsg': 'You are not allowed to change the BGP AS number, \
-doing so will disconnect the management interface!'
+    'warningmsg': 'Are you sure you want to change the BGP AS number? Doing so might disconnect the management interface!',
+    'errormsg': 'You are not allowed to change the BGP AS number, doing so will disconnect the management interface!'
 }
 ```
 then from the cli reload the scripts
@@ -68,7 +66,7 @@ interface!
 Proceed? [yes,no]
 
 ```
-### about policy scripts
+### About policy scripts
 
 Policy scripts are invoked at validation time, before a change is committed. A policy script can reject the data, accept it, or accept it with a warning. If a warning is produced, it will be displayed for interactive users (e.g. through the CLI or Web UI). The user may choose to abort or continue to commit the transaction.
 
