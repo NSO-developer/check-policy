@@ -74,3 +74,7 @@ Policy scripts are typically assigned to individual leafs or containers. In some
 
 All policy scripts are invoked on every configuration change. The policy scripts can be configured
 to depend on certain subtrees of the configuration, which can save time but it is very important that all dependencies are stated and also updated when the validation logic of the policy script is updated. Otherwise an update may be accepted even though a dependency should have denied it.
+
+### Contact
+
+Contact Hakan Niska hniska@cisco.com with any suggestions or comments. If you find any bugs please fix them and send me a pull request.
